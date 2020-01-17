@@ -14,7 +14,8 @@ $(document).ready(function(){
 );
 
 function clickNext(){
-  alert('dopo')
+  var imgActive = $('.active');
+  var nextImg = imgActive.next();
 };
 
 function clickPrev(){
