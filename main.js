@@ -18,8 +18,8 @@ function clickNext(){
   var nextImg = imgActive.next();
 
   if(imgActive.hasClass('last') == true){
+    imgActive.removeClass('active');
     $('img.first').addClass('active');
-    $('img.last').removeClass('active');
   }
 
   else{
