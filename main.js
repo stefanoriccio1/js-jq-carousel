@@ -28,6 +28,8 @@ function clickNext(){
   }
 };
 
+// funzioni riutilizzabili
+
 function clickPrev(){
   var imgActive = $('.active');
   var prevImg = imgActive.prev();

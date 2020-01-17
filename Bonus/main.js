@@ -13,6 +13,7 @@ $(document).ready(function(){
  }
 );
 
+// funzioni riutilizzabili
 function clickNext(){
   var imgActive = $('.active');
   var nextImg = imgActive.next();
@@ -42,9 +43,10 @@ function clickPrev(){
   }
 };
 
+// keydown
 $(document).keydown(
   function(){
-    
+
   if (event.keyCode == 39){
     clickNext()
   }
