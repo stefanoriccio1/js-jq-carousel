@@ -44,6 +44,9 @@ function clickPrev(){
 
 $(document).keydown(
   function(){
-    console.log(event.keyCode);
+  console.log(event.keyCode);
+  if (event.keyCode == 39){
+    clickNext()
+  }
   }
 )
