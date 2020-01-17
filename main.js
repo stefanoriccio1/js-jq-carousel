@@ -29,5 +29,15 @@ function clickNext(){
 };
 
 function clickPrev(){
-  alert('prima')
+  var imgActive = $('.active');
+  var prevImg = imgActive.prev();
+
+  if (imgActive.hasClass('first') == true){
+    imgActive.removeClass('active');
+    $('img.last').addClass('active');
+  }
+  else {
+    imgActive.removeClass('active');
+    prevImg.addClass('active');
+  }
 };
