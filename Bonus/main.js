@@ -48,5 +48,8 @@ $(document).keydown(
   if (event.keyCode == 39){
     clickNext()
   }
+  else if (event.keyCode == 37){
+    clickPrev()
+  }
   }
 )
